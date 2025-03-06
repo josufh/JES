@@ -66,5 +66,6 @@ uint8_t TSX();
 uint8_t TXA();
 uint8_t TXS();
 uint8_t TYA();
+uint8_t XXX();
 
 #endif // INSTRUCTION_H
