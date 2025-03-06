@@ -44,6 +44,13 @@ static uint8_t data = 0x00,
                opcode = 0x00,
                cycles = 0;
 
+uint8_t get_AC() { return AC; }
+uint8_t get_X() { return X; }
+uint8_t get_Y() { return Y; }
+uint8_t get_SR() { return SR; }
+uint8_t get_SP() { return SP; }
+uint16_t get_PC() { return PC; }
+
 void clock() {
     if (!cycles) {
         opcode = read_data(PC++);
@@ -120,7 +127,6 @@ void nmi() {
 
 void cpu_init() {
     bus_init();
-    reset();
 }
 
 uint8_t toggle_flag(CPUFLAGS f) {

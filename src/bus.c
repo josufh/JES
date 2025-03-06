@@ -20,3 +20,5 @@ uint8_t bus_read(uint16_t addr) {
     }
     return 0x00;
 }
+
+uint8_t *get_ram() { return ram; }

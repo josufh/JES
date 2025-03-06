@@ -8,4 +8,6 @@ void bus_init();
 void bus_write(uint16_t addr, uint8_t data);
 uint8_t bus_read(uint16_t addr);
 
+uint8_t *get_ram();
+
 #endif // BUS_H
